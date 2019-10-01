@@ -1,13 +1,9 @@
 package edu.fitchburgstate.csc7400.hw1;
 /**
 * Class: Object-Oriented Design and Analysis
-
 * Professor: Orlando Montalvo
-
  * Assignment: HW 1
-
  * Student: Vinitha Gaddampally
-
  * Date: 2019-09-20
  */
 import java.util.Iterator;
@@ -20,23 +16,18 @@ import java.util.List;
  */
 public class Inventory {
 	/**
-
   *  Rick's guitar inventory list
-
-  */
+   */
   private List<Guitar> guitars;
   /**
   * Constructor
   *
   * Initializes guitar inventory list
-
-   */
-// constructor initializes Rick's guitar inventory list
+  */
   public Inventory() {
     guitars = new LinkedList<Guitar>();
   }
-  
-		/**
+       /**
 		 * This particular method adds guitar to the inventory
 		 * @param serial Number
 		 * @param price store
