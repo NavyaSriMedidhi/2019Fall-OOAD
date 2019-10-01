@@ -4,30 +4,28 @@ package edu.fitchburgstate.csc7400.hw1;
 * Professor: Orlando Montalvo
  * Assignment: HW 1
  * Student: Vinitha Gaddampally
- * Date: 2019-09-20
  */
+
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 /**
  * * Inventory  class contains available guitars from Ricks music store
+ * 
  * @author HeadFirstOODA
  *
  */
+
+
 public class Inventory {
-	/**
-  *  Rick's guitar inventory list
-   */
-  private List<Guitar> guitars;
+     private List<Guitar> guitars;
   /**
-  * Constructor
   *
   * Initializes guitar inventory list
   */
-  public Inventory() {
-    guitars = new LinkedList<Guitar>();
-  }
-       /**
+  
+       /** 
+        * constructor
 		 * This particular method adds guitar to the inventory
 		 * @param serial Number
 		 * @param price store
@@ -35,8 +33,11 @@ public class Inventory {
 		 * @param model
 		 * @param type guitar type
 		 * @param backwood
-		 * @param@topwood
+		 * @param topwood
 		 */
+     public Inventory() {
+    	    guitars = new LinkedList<Guitar>();
+     }
    public void addGuitar(String serialNumber,double price, String builder, String model,
                         String type, String backWood, String topWood) {
     Guitar guitar = new Guitar(serialNumber, price, builder,
@@ -46,7 +47,7 @@ public class Inventory {
    /**
     * returns a guitar to the specified serial number
     * @param serialNumber
-    * @return
+    * @return Guitar object
     */
   public Guitar getGuitar(String serialNumber) {
     for (Iterator<Guitar> i = guitars.iterator(); i.hasNext(); ) {
