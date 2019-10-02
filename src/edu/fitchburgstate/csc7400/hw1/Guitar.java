@@ -3,7 +3,7 @@ package edu.fitchburgstate.csc7400.hw1;
  * Class: Object-Oriented Design and Analysis
  * Professor: Orlando Montalvo
  * Assignment: HW 1
- * 
+ * Student: Lauren McDade
  * Date: 2018-09-03
  */
 
