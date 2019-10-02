@@ -1,3 +1,19 @@
+/**
+ * Class: Object-Oriented Design and Analysis
+ * Professor: Orlando Montalvo
+ * Assignment: HW 1
+ * Student: Lauren McDade
+ * Date: 2018-09-03
+ */
+
+/**
+ * Inventory contains the information needed to search for a type of guitar from
+ * Rick's music store
+ * 
+ * @author HeadFirstOODA
+ *
+ */
+
 package edu.fitchburgstate.csc7400.hw1;
 import java.util.Iterator;
 import java.util.LinkedList;
