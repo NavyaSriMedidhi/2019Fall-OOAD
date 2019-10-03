@@ -1,26 +1,31 @@
-package edu.fitchburgstate.csc7400.hw1;
+
 /*
-* class: Object-Oriented Design and Analysis
-* Professor : Orlando Montavo
-* Assignment : 1
-* Student : Akhila
-* 
-* 
-*/
+ * class:Object Oriented Analysis and Design
+ * Instructor:Orlando Montalvo
+ * Assignment:1
+ * Student Name:Akhila Lolam (@01408514)
+ */
 
+package edu.fitchburgstate.csc7400.hw1;
 import static org.junit.jupiter.api.Assertions.*;
-//Here we are importing all the required classes.
-
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+/*
+* InventoryTest class contains JUnit test cases for Inventory class.
+* Presently it matches customer requirements with the available inventory
+* The aim of the inventory test class is to test all methods present in inventory class
+*
+*/
+
 class InventoryTest {
 	Inventory inventory;
 
-	@BeforeEach
+	@BeforeEach // method which executes before the @Test
 	void setUp() throws Exception {
 		inventory = new Inventory(); // First we are declaring inventory.
+		//we add all the guitar details to the inventory
 		inventory.addGuitar("11277", 3999.95, "Collings", "CJ", "acoustic", "Indian Rosewood", "Sitka");
 		inventory.addGuitar("V95693", 1499.95, "Fender", "Stratocastor", "electric", "Alder", "Alder");
 		inventory.addGuitar("V9512", 1549.95, "Fender", "Stratocastor", "electric", "Alder", "Alder");
@@ -33,12 +38,19 @@ class InventoryTest {
 		inventory.addGuitar("566-62", 8999.95, "Ryan", "Cathedral", "acoustic", "Cocobolo", "Cedar");
 		inventory.addGuitar("6 29584", 2100.95, "PRS", "Dave Navarro Signature", "electric", "Mahogany", "Maple");
 	}
-	//we add all the guitar details to the inventory
+	
 
-	@AfterEach
+	 // Executes before every test method and makes inventory NULL
+	
+	@AfterEach //executes before the @Test
 	void tearDown() throws Exception {
 		inventory = null;
 	}
+	
+	/**
+	* testSearch method will test the inventory by passing guitar with all the arguments.
+	* fail if no match is found and pass if match is found
+	*/
 
 	@Test
 	void testSearch() {
