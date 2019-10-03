@@ -1,6 +1,13 @@
+/**
+ * Course: Object oriented analysis and Design
+ * Instructor: Orlando Montalvo
+ * Assignment: Homework 1
+ * StudentName: Kyathi
+ * Date: 10/03/2019
+ */
 
+ 
 package edu.fitchburgstate.csc7400.hw1;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 
@@ -8,9 +15,17 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+/** 
+* This tests the Inventory class
+* @author Kboppana
+*/
+
 class InventoryTest {
 	Inventory inventory;
-
+/**
+* It adds values of Inventory to test
+*/
+	
 	@BeforeEach
 	void setUp() throws Exception {
 		inventory = new Inventory(); 
@@ -27,12 +42,18 @@ class InventoryTest {
 		inventory.addGuitar("6 29584", 2100.95, "PRS", "Dave Navarro Signature", "electric", "Mahogany", "Maple");
 	}
 	
+/**
+*It handles and throws Exception
+*/
 
 	@AfterEach
 	void tearDown() throws Exception {
 		inventory = null;
 	}
-
+/**
+* Test search search for entered values and will return whether it found or not
+*/
+	
 	@Test
 	void testSearch() {
 		Guitar whatErinLikes = new Guitar("", 0, "fender", "Stratocastor", "electric", "Alder", "Alder");
