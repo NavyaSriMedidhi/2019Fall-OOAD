@@ -1,16 +1,16 @@
 
 /**
- * class:Object Oriented Analysis and Design
- *Instructor:Orlando Montalvo
- *Assignment:Homework 1
- *Student Name:Kyathiboppana
+ * class: Object Oriented Analysis and Design
+ * Instructor: Orlando Montalvo
+ * Assignment: Homework 1
+ * Student Name: Kyathiboppana
  */
 package edu.fitchburgstate.csc7400.hw1;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 /**
-*Inventory contains all information about guitars that are available in store which will be 
+* Inventory contains all information about guitars that are available in store which will be 
 * helpful for customers to find suitable guitars.
 *
 * @author Kboppana
@@ -20,7 +20,7 @@ import java.util.List;
 public class Inventory {
   private List<Guitar> guitars;
   /**
-     * list of Guitar Details
+     * adds guitar details to list
      * @param serialNumber
      * @param price
      * @param builder
@@ -43,8 +43,8 @@ public class Inventory {
   }
    /**
    * Returns about guitar particular details based on serial number
-   *@param serialNumber
-   *@return
+   * @param serialNumber
+   * @return guitar details
    */
   
   public Guitar getGuitar(String serialNumber) {
@@ -60,7 +60,7 @@ public class Inventory {
   * Customer provides guitar particulars so that it search for matching guitar in inventory 
   * if there returns information else return Null 
   * @param Search for specific type of guitar
-  * @return
+  * @return  matching search guitar
   */
   
   public Guitar search(Guitar searchGuitar) {
