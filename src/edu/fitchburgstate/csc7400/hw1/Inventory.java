@@ -1,9 +1,10 @@
 package edu.fitchburgstate.csc7400.hw1;
 /*
- * class:Object Oriented Analysis and Design
+ *Class:Object Oriented Analysis and Design
  *Instructor:Orlando Montalvo
  *Assignment:Homework 1
- *Student Name:Kyathiboppana
+ *Student Name:Jkimani
+ *Date: 2018-09-03
  */
 
 import java.util.Iterator;
@@ -33,7 +34,11 @@ public class Inventory {
   public Inventory() {
     guitars = new LinkedList<Guitar>();
   }
-
+/**
+ *constructs guitar object with serialNumber, price, builder,
+ * model, type, backWood and topWood 
+ * @param addGuitar
+ */
   public void addGuitar(String serialNumber, double price,
                         String builder, String model,
                         String type, String backWood, String topWood) {
