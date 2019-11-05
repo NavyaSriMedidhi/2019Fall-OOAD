@@ -13,7 +13,7 @@ import java.util.List;
 *Inventory contains all information about guitars that are available in store which will be 
 * helpful for customers to find suitable guitars.
 *
-* @author Kboppana
+* @author Headfirstooad
 *
 */
 
@@ -25,9 +25,9 @@ public class Inventory {
      *@param price
      *@param builder
      *@param model
-     *@param type
-     *@param backwood
-     *@param topWood
+     *@param type guitar type 
+     *@param backwood wood used on the back of guitar 
+     *@param topWood  wood used on top of the guitar
      */
   
   public Inventory() {
