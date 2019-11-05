@@ -1,16 +1,16 @@
 package edu.fitchburgstate.csc7400.hw1;
 /*
  * class:Object Oriented Analysis and Design
- *Instructor:Orlando Montalvo
- *Assignment:Homework 1
- *Student Name:Kyathiboppana 
+ * Instructor:Orlando Montalvo
+ * Assignment:Homework 1
+ * Student Name:Kyathiboppana 
  */
 
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 /**
-*Inventory contains all information about guitars that are available in store which will be 
+* Inventory contains all information about guitars that are available in store which will be 
 * helpful for customers to find suitable guitars.
 *
 * @author Headfirstooad
@@ -20,14 +20,14 @@ import java.util.List;
 public class Inventory {
   private List<Guitar> guitars;
   /**
-     *constructor
-     *@param serialNumber
-     *@param price
-     *@param builder
-     *@param model
-     *@param type guitar type 
-     *@param backwood wood used on the back of guitar 
-     *@param topWood  wood used on top of the guitar
+     * constructor
+     * @param serialNumber
+     * @param price
+     * @param builder
+     * @param model
+     * @param type guitar type 
+     * @param backwood wood used on the back of guitar 
+     * @param topWood  wood used on top of the guitar
      */
   
   public Inventory() {
@@ -42,9 +42,9 @@ public class Inventory {
     guitars.add(guitar);
   }
    /**
-   *Returns about guitar particulars based on serial number
-   *@param serialNumber
-   *@return
+   * Returns about guitar particulars based on serial number
+   * @param serialNumber
+   * @return
    */
   
   public Guitar getGuitar(String serialNumber) {
@@ -58,9 +58,9 @@ public class Inventory {
   }
   /**
   * Customer provides guitar particulars so that it search for matching guitar in inventory 
-  *if there returns information else return Null 
-  *@param Search for specific type of guitar
-  *@return
+  * if there returns information else return Null 
+  * @param Search for specific type of guitar
+  * @return
   */
   
   public Guitar search(Guitar searchGuitar) {
