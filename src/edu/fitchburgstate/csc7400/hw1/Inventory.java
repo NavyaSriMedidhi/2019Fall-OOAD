@@ -21,22 +21,25 @@ import java.util.List;
  */
 
 public class Inventory {
+/** The list of guitar */
   private List<Guitar> guitars;
   /**
    *constructor
-   *@param serialNumber
-   *@param price
-   *@param builder
-   *@param model
-   *@param type
-   *@param backwood
-   *@param topWood
+   *@param serialNumber manufacture serial number
+   *@param price guitar price
+   *@param builder the guitar's builder
+   *@param model the manufacturer model
+   *@param type the guitar type
+   *@param backwood wood for guitar body
+   *@param topWood wood for guitar surface
    */
   
   public Inventory() {
     guitars = new LinkedList<Guitar>();
   }
-
+  /**  
+   * Adding guitarusing serial number, price, builder, model, type, backwood, and top wood
+   */
   public void addGuitar(String serialNumber, double price,
                         String builder, String model,
                         String type, String backWood, String topWood) {
@@ -46,8 +49,9 @@ public class Inventory {
   }
    /**
     *Returns about guitar particulars based on serial number
-    *@param serialNumber
-    *@return
+    *@param serialNumber manufacturer serial number
+    *@return guitar when the serial number match the ones in stock
+    *        null if serial number not found
     */
   
   public Guitar getGuitar(String serialNumber) {
@@ -63,7 +67,7 @@ public class Inventory {
    * Customer provides guitar particulars so that it search for matching guitar in inventory 
    *if there returns information else return Null 
    *@param Search for specific type of guitar
-   *@return
+   *@return guitar when found match
    */
   
   public Guitar search(Guitar searchGuitar) {
